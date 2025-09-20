@@ -1,0 +1,367 @@
+\documentclass[12pt]{article}
+ \usepackage{amsmath}
+ \usepackage{latexsym}
+ \usepackage{amsfonts}
+ \usepackage[normalem]{ulem}
+ \usepackage{soul}
+ \usepackage{array}
+ \usepackage{amssymb}
+ \usepackage{extarrows}
+ \usepackage{graphicx}
+
+ \usepackage[backend=biber,
+ style=numeric,
+ sorting=none,
+ isbn=false,
+ doi=false,
+ url=false,
+ ]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{listings}
+\usepackage{xcolor} % для цветов
+
+\lstset{
+  language=Python,            % язык (Python, C, Java...)
+  basicstyle=\ttfamily\small, % шрифт кода
+  numbers=left,               % нумерация строк
+  numberstyle=\tiny\color{gray},
+  backgroundcolor=\color{lightgray!20},
+  frame=single,                % рамка вокруг кода
+  keywordstyle=\color{blue},   % ключевые слова
+  commentstyle=\color{green!50!black}, % комментарии
+  stringstyle=\color{orange},
+  showstringspaces=false
+}
+
+
+  \usepackage{subfig}
+ \usepackage{wrapfig}
+ 
+ \usepackage{wasysym}
+ \usepackage{enumitem}
+ \usepackage{adjustbox}
+ \usepackage{ragged2e}
+ \usepackage[svgnames,table]{xcolor}
+ \usepackage{tikz}
+ \usepackage{longtable}
+ \usepackage{changepage}
+ \usepackage{setspace}
+ \usepackage{hhline}
+ \usepackage{multicol}
+ \usepackage{tabto}
+ \usepackage{float}
+ \usepackage{multirow}
+ \usepackage{makecell}
+ \usepackage{fancyhdr}
+ \usepackage[toc,page]{appendix}
+ \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+ \usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+ \tikzset{>={Latex[width=1.5mm,length=2mm]}}
+ \usepackage{flowchart}\usepackage[paperheight=11.69in,paperwidth=8.27in,left=1.18in,right=0.39in,top=0.79in,bottom=0.79in,headheight=1in]{geometry}
+ \usepackage[utf8]{inputenc}
+ \usepackage[russian]{babel}
+ \usepackage[T1,T2A]{fontenc}
+ \TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,}
+
+  \urlstyle{same}
+
+ 
+
+ 
+  \setcounter{tocdepth}{5}
+ \setcounter{secnumdepth}{5}
+
+ 
+  \setlistdepth{9}
+ \renewlist{enumerate}{enumerate}{9}
+ 		\setlist[enumerate,1]{label=\arabic*)}
+ 		\setlist[enumerate,2]{label=\alph*)}
+ 		\setlist[enumerate,3]{label=(\roman*)}
+ 		\setlist[enumerate,4]{label=(\arabic*)}
+ 		\setlist[enumerate,5]{label=(\Alph*)}
+ 		\setlist[enumerate,6]{label=(\Roman*)}
+ 		\setlist[enumerate,7]{label=\arabic*}
+ 		\setlist[enumerate,8]{label=\alph*}
+ 		\setlist[enumerate,9]{label=\roman*}
+
+  \renewlist{itemize}{itemize}{9}
+ 		\setlist[itemize]{label=$\cdot$}
+ 		\setlist[itemize,1]{label=\textbullet}
+ 		\setlist[itemize,2]{label=$\circ$}
+ 		\setlist[itemize,3]{label=$\ast$}
+ 		\setlist[itemize,4]{label=$\dagger$}
+ 		\setlist[itemize,5]{label=$\triangleright$}
+ 		\setlist[itemize,6]{label=$\bigstar$}
+ 		\setlist[itemize,7]{label=$\blacklozenge$}
+ 		\setlist[itemize,8]{label=$\prime$}
+
+  \pagenumbering{gobble}
+ \setlength{\topsep}{0pt}\setlength{\parskip}{9.96pt}
+ \setlength{\parindent}{0pt}
+
+   %%%%%%%%%%%%  This sets linespacing (verticle gap between Lines) Default=1 %%%%%%%%%%%%%%
+
+ 
+  \renewcommand{\arraystretch}{1.3}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Document code starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+ 
+  \begin{document}
+ \begin{Center}
+ ИТМО
+ \end{Center}\par
+
+  \begin{Center}
+ Институт математики
+ \end{Center}\par
+ \vspace{\baselineskip}
+ ОТЧЕТ \\
+ ЗАЩИЩЕН С ОЦЕНКОЙ\par
+
+  ПРЕПОДАВАТЕЛЬ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{2.05in}p{0.0in}p{1.76in}p{-0.01in}p{1.89in}}
+ %row no:1
+ \multicolumn{1}{p{2.05in}}{\Centering {проф., д.т.н., проф.}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}}{} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}}{\Centering {Усачева Д.М.}} \\
+ \hhline{-~-~-}
+ %row no:2
+ \multicolumn{1}{p{2.05in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {должность, уч. степень, звание}}} & 
+ \multicolumn{1}{p{0.0in}}{} & 
+ \multicolumn{1}{p{1.76in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.01in}}{} & 
+ \multicolumn{1}{p{1.89in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 1 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{6.49in}}
+ %row no:1
+ \multicolumn{1}{p{6.49in}}{\fontsize{14pt}{16.8pt}\selectfont {\section*{\Centering {ОТЧЕТ О ЛАБОРАТОРНОЙ РАБОТЕ №0}}}}\\
+ \hhline{~}
+ %row no:2
+ \multicolumn{1}{p{6.49in}}{\section*{\Centering {Вводная}}
+ } \\
+ \hhline{~}
+ %row no:3
+ \multicolumn{1}{p{6.49in}}{\subsubsection*{\Centering {по курсу: МАШИННОЕ ОБУЧЕНИЕ}}
+ } \\
+ \hhline{~}
+ %row no:4
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+ %row no:5
+ \multicolumn{1}{p{6.49in}}{} \\
+ \hhline{~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 2 ends here %%%%%%%%%%%%%%%%%%%%
+
+  РАБОТУ ВЫПОЛНИЛ\par
+
+ 
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 starts here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \begin{table}[H]
+  			\centering
+ \begin{tabular}{p{1.3in}p{1.0in}p{-0.04in}p{1.63in}p{-0.04in}p{1.63in}}
+ %row no:1
+ \multicolumn{1}{p{1.3in}}{СТУДЕНТ ГР. №} & 
+ \multicolumn{1}{p{1.0in}}{\Centering {R3340}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}}{\Centering {Холухина Д.Е.}} \\
+ \hhline{~-~-~-}
+ %row no:2
+ \multicolumn{1}{p{1.3in}}{} & 
+ \multicolumn{1}{p{1.0in}}{} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {подпись, дата}}} & 
+ \multicolumn{1}{p{-0.04in}}{} & 
+ \multicolumn{1}{p{1.63in}} {\Centering{\fontsize{10pt}{12.0pt}\selectfont  {инициалы, фамилия}}} \\
+ \hhline{~~~~~~}
+
+  \end{tabular}
+  \end{table}
+
+ 
+  %%%%%%%%%%%%%%%%%%%% Table No: 3 ends here %%%%%%%%%%%%%%%%%%%%
+
+ 
+  \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+ \vspace{\baselineskip}
+\vspace{\baselineskip}
+ \vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip} \vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+
+ \begin{Center}
+ Санкт-Петербург 
+ \par \the\year{}
+ \end{Center}\par
+
+
+\newpage
+
+\setcounter{page}{2}
+\tableofcontents
+
+\newpage
+
+
+
+\section*{Задание 1.}
+\addcontentsline{toc}{section}{Задание 1.}
+
+Целью первого задания было поразмышлять о своих целях и задачах на текущий семестр.
+С помощью веб-интерфейса GitHub создали файл goals.md в своем репозитории.
+Используя язык разметки markdown, создали заголовки "Мой опыт" и "Мои цели".
+Написали один абзац (1-5 предложений) о своем опыте по разработке программного обеспечения. Добавили работающую ссылку в написанный текст (на мой профиль в GitHub).
+Создали нумерованный список из 2 или 3 целей, которых планируем достичь в рамках данного курса.
+Создайли ненумерованный список из 3-9 задач, над которыми собирались работать в рамках данного курса для достижения поставленных целей.
+Создали папку resources в корне репозитория. Загрузили в эту папку изображение и добавили его в наш .md файл.
+Так же не забыли закоммитить файлы в свой репозиторий на GitHub.
+Проверили, что созданный .md файл отформатирован и отображается при предпросмотре именно так, как планировалось.
+
+\section*{Задание 2.}
+\addcontentsline{toc}{section}{Задание 2.}
+Целью второго задания было научиться использовать git из командной строки.
+
+Мы ознакомились с инструкцией по работе с git и github из командной строки.
+Клонировали свой репозиторий на локальный компьютер используя команду git clone (с ссылкой на свой репозиторий) из командной строки.
+Создали новый файл info.md в своей локальной копии репозитория.
+Записали в этот файл свое ФИО, название используемой операционной системы, текущие дату и время, - каждый элемент с новой строки (всего получится 3 строки).
+Выполнили команды git add info.md и git commit в командной строке.
+Ввели краткое описание коммита.
+Выполнили команду git push.
+Создали папку data в корне репозитория и в ней файл dataset.csv. Создали файл .gitignore, в который добавили строку data/. Далее закоммитили .gitignore и попробовали закоммитить data/dataset.csv, после чего отправили коммиты в репозиторий на github.com с помщью git push. 
+
+
+\textbf{Эксперимент с файлом .gitignore}
+\addcontentsline{toc}{subsection}{Эксперимент с файлом .gitignore}
+
+
+В корне репозитория была создана папка \texttt{data} и в ней файл \texttt{dataset.csv}.
+Затем в корне репозитория был создан файл \texttt{.gitignore}, в который добавлена строка:
+\begin{lstlisting}
+data/ 
+\end{lstlisting}
+Данная строка означает, что система контроля версий Git должна игнорировать
+все файлы и подпапки внутри каталога \texttt{data}.
+
+После этого файл \texttt{.gitignore} был добавлен в индекс и закоммичен:
+\begin{lstlisting}
+git add .gitignore
+git commit -m "Добавлен .gitignore для игнора папки data"
+\end{lstlisting}
+
+Затем была предпринята попытка добавить файл \texttt{data/dataset.csv}:
+\begin{lstlisting}
+git add data/dataset.csv
+\end{lstlisting}
+\newpage
+Git выдал сообщение:
+\begin{lstlisting}
+The following paths are ignored by one of your .gitignore files:
+data/dataset.csv
+hint: Use -f if you really want to add them.
+\end{lstlisting}
+Это означает, что путь \texttt{data/dataset.csv} игнорируется в соответствии
+с настройками \texttt{.gitignore}, поэтому Git не добавляет этот файл в индекс
+и, следовательно, не может его закоммитить.
+
+Далее был выполнен пуш изменений:
+\begin{lstlisting}
+git push
+\end{lstlisting}
+
+В удалённый репозиторий на GitHub был отправлен только коммит с файлом
+\texttt{.gitignore}, тогда как папка \texttt{data} и файл \texttt{dataset.csv}
+в репозитории отсутствуют.
+
+
+\newpage
+
+\section*{Приложение.}
+\addcontentsline{toc}{section}{Приложение.}
+\textbf{Содержимое файла goals.md:}
+
+# Мой опыт
+Когда-то я пользовалась GitHubом в Яндекс лицее, но уже ничег не помню, вот ссылка:
+(https://github.com/Difedron)
+
+
+# Мои цели
+
+В рамках данного курса я планирую:
+1. Освежить свои знания ML
+2. Научиться нормально пользоваться GitHubом
+3. Научиться обучать крутые модели
+
+Чтобы этого достичь, я буду:
+- Слушать лекции
+- Делать практические задания
+- Хорошо высыпаться и кушать
+- Усердно трудиться
+
+
+
+\textbf{Содержимое файла info.md:}
+
+Холухина Диана Евгеньевна
+
+macOS Sonoma 14.3
+
+2025-09-19 16:38:50
+
+
+\textbf{Содержимое файла .gitignore:}
+\par
+
+data/
+
+
+
+
+
+
+\end{document}
